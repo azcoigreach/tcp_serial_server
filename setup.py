@@ -10,7 +10,6 @@ setup(
     install_requires = [
         'click',
         'coloredlogs',
-        'pickle',
     ],
     entry_points = '''
         [console_scripts]
