@@ -51,12 +51,13 @@ def cli():
                 return data
             else:
                 pass
-
-    while True:
-        with open(FILENAME, 'wb') as f:
+    try:
+        while True:
             data = socket_server()
-            pickle.dump(data, f)
-        
-
-    logger.debug('Socket closed.')
-    conn.close()
+            with open(FILENAME, 'wb') as f:
+                logger.debug('Pickling %s', data)
+                pickle.dump(data, f)
+                
+    except KeyboardInterrupt:
+        conn.close()
+        logger.debug('Socket closed.')

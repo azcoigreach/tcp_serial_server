@@ -1,9 +1,0 @@
-README.md
-TCP_Socket_Serial_Server.egg-info/PKG-INFO
-TCP_Socket_Serial_Server.egg-info/SOURCES.txt
-TCP_Socket_Serial_Server.egg-info/dependency_links.txt
-TCP_Socket_Serial_Server.egg-info/entry_points.txt
-TCP_Socket_Serial_Server.egg-info/requires.txt
-TCP_Socket_Serial_Server.egg-info/top_level.txt
-tcp_serial_server/__init__.py
-tcp_serial_server/cli.py

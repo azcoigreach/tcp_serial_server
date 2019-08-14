@@ -4,7 +4,7 @@ setup(
     author="azcoigreach",
     author_email="azcoigreach@gmail.com",
     name = 'TCP Socket Serial Server',
-    version = '0.0.1',
+    version = '0.1.0',
     packages=['tcp_serial_server'],
     include_package_data=True,
     install_requires = [
