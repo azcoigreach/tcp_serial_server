@@ -46,7 +46,7 @@ def cli():
             data = conn.recv(BUFFER_SIZE)
             if not data:
                 break
-            logger.info('received data: %s', data)
+            logger.info('Received data: %s', data)
             if data:
                 conn.close()
                 return data
@@ -56,9 +56,9 @@ def cli():
         while True:
             data = socket_server()
             with open(FILENAME, 'wb') as f:
-                logger.debug('Pickling %s', data)
+                logger.info('Pickling %s', data)
                 pickle.dump(data, f)
                 
     except KeyboardInterrupt:
         conn.close()
-        logger.debug('Socket closed.')
+        logger.info('Socket closed.')
