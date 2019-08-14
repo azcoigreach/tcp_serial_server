@@ -47,8 +47,8 @@ def cli():
             with open(FILENAME, 'wb') as f:
                 pickle.dump(data, f)
 
-        else:
-            pass
+        # else:
+        #     pass
             
     logger.debug('Socket closed.')
     conn.close()
