@@ -8,7 +8,7 @@
 *.user
 *.userosscache
 *.sln.docstates
-
+*.pickle
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
@@ -23,6 +23,8 @@ bld/
 [Bb]in/
 [Oo]bj/
 [Ll]og/
+*.egg-info/
+
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
