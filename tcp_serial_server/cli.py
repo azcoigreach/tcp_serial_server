@@ -39,6 +39,7 @@ def cli():
         logger.info('Socket %s:%s open', TCP_IP, TCP_PORT)
         
         s.listen(1)
+        logger.info('Listening.')
         conn, addr = s.accept()
         logger.info('Connection from: %s', addr)
         
@@ -49,6 +50,7 @@ def cli():
             logger.info('Received data: %s', data)
             if data:
                 conn.close()
+                logger.info('Connection close.')
                 return data
             else:
                 pass
@@ -61,4 +63,4 @@ def cli():
                 
     except KeyboardInterrupt:
         conn.close()
-        logger.info('Socket closed.')
+        logger.info('Connection closed.')
