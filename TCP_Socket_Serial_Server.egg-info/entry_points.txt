@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        tcp_serial_server=tcp_serial_server.cli:cli
+    
