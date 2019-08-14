@@ -43,9 +43,9 @@ def cli():
         if not data:
             break
         logger.info('received data: %s', data)
-        
-        with open(FILENAME, 'wb') as f:
-            pickle.dump(data, f)
+        if data:
+            with open(FILENAME, 'wb') as f:
+                pickle.dump(data, f)
 
         else:
             pass
