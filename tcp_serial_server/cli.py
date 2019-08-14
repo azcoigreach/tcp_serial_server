@@ -48,6 +48,7 @@ def cli():
                 break
             logger.info('received data: %s', data)
             if data:
+                conn.close()
                 return data
             else:
                 pass
